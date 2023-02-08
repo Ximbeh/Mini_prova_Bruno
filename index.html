@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provinha</title>
+</head>
+<body>
+    <button onclick="confirmaracao()">
+        Questão 3
+    </button>
+</body>
+</html>
+
+<script>
+
+    //Questão 1
+    var a = 10
+    var b = 20
+    var c = (a*b)
+    var d = (a+b+c)
+    var media = ((a+b+c+d)/4)
+
+    console.log(
+        "Questão 1 \n a: " + a + "\n b: " + b + "\n c: " + c + "\n d: " + d + "\n Média: " + media
+    )
+
+    
+
+    //Questão 2
+    var salario = 3000
+
+    if (salario <=2000) {
+       reajuste = 15/100
+        reajusten = "15%"
+        }
+     else if (salario >2000 <4000){
+        reajuste = 12/100
+        reajusten = "12%"
+    }
+    else{
+        reajuste = 10/100
+        reajusten = "10%"
+    }
+
+    reajustereal = salario*reajuste
+
+    console.log(
+        "Questão 2 \n Novo Salário: " + (salario + reajustereal) + "\n Valor Reajustado: " + reajustereal + "\n Indice Reajustado: " + reajusten
+    )
+
+    //Questão 3
+    var base = 50
+    var minicurso = 0
+    var traducao = 0
+
+    const confirmaracao = () => {
+        const response = confirm("Deseja participar dos Minicursos?")
+
+        if (response) {
+            var minicurso = 20
+        } else {
+            var minicurso = 0
+        }
+
+        const response2 = confirm("Deseja tradução simultanea")
+
+        if (response2) {
+            var traducao = 10
+        } else {
+            var traducao = 0
+        }
+
+        console.log(
+        "Questão 3 \n Valor da inscrição: R$ " + (base+minicurso+traducao)
+    )
+    }
+
+
+    var sexo = Math.floor(Math.random() * 2)
+    var filmes = Math.floor(Math.random() * 75 + 18)
+
+    
+    //Questão 4
+
+
+
+
+
+    //Questão 5
+
+    var conceito 
+
+    function randomico(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    let nota1 = [];
+    for (let i = 0 ; i < 10 ; i++){
+      nota1.push(randomico(0,10));
+    }
+
+    let nota2 = [];
+    for (let i = 0 ; i < 10 ; i++){
+      nota2.push(randomico(0,10));
+    }
+
+    let media5 = [
+        (nota1[0] + nota2 [0]) / 2, (nota1[1] + nota2 [1]) / 2, (nota1[2] + nota2 [2]) / 2, (nota1[3] + nota2 [3]) / 2, (nota1[4] + nota2 [4]) / 2,
+         (nota1[5] + nota2 [5]) / 2, (nota1[6] + nota2 [6]) / 2, (nota1[7] + nota2 [7]) / 2, (nota1[8] + nota2 [8]) / 2, (nota1[9] + nota2 [9]) / 2
+
+    ]
+
+    if (media5 [0] >= 9){
+        conceito = true
+    } else {
+        conceito = false
+    }
+
+    console.log(nota1)
+    console.log(nota2)
+    console.log(media5)
+
+
+    console.log (
+        "Questão 5 \n Quantidade de alunso conceito A: " + "\n Média geral da turma: "
+    )
+
+
+
+    
+
+</script>
